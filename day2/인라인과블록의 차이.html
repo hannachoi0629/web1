@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인과 블록의 차이</title>
+    <!-- css의 기본 구조 -->
+        <style>
+                h1 {
+                    padding: 10px;
+                    background-color: blue;
+                }
+
+            p{
+                padding: 10px;
+
+                background-color: blueviolet;
+            }
+
+
+            span{
+                    padding: 10px;
+                    background-color: coral;
+
+
+            }
+
+        </style>
+</head>
+<body>
+
+    <!-- 블록은 인라인 태그를 감쌀 수 있다.  -->
+    <h1>이것은 블록태그로 만든 제목입니다.</h1>
+    <p>이것은 블록태그로 만든 설명입니다.</p>
+             <span>랄랄라</span> 
+
+
+    <!-- 인라인 태그는 인라인을 감쌀 수 있다. -->
+    <span>이것은 인라인 요소이고 내용 1 입니다.</span>
+    <span>이것은 인라인 요소이고 내용 2 입니다.</span>
+
+<!--  아래 의 태그는 잘못 된 구조이다 인라인 안에는 블록이 들어 갈 수 옶당. -->
+    <span>이것은 인라인 요소이고 내용 3 입니다.</span>
+            <p>랄라</p>
+
+</body>
+</html>
