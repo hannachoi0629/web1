@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상선택자</title>
+
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: sandybrown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box_text {
+            margin: 0;
+            font-size: 50px;
+            font-weight: 900;
+            color: palegreen;
+        }
+
+        .box:hover>.box_text {
+            color: aqua;
+        }
+
+        .box:hover {
+            background-color: darkgreen;
+            transition: 0.5s;
+        }
+
+        .box2 {
+            width: 900px;
+            height: 150px;
+            background-color: forestgreen;
+            text-align: center;
+            line-height: 150px;
+        }
+
+        .box2>p {
+            font-size: 32px;
+            color: royalblue;
+        }
+
+        .box2:active {
+            background-color: cadetblue;
+            transition: 0.2s;
+        }
+
+        .box2:active>p {
+            color: goldenrod;
+        }
+
+        .hooothooot>li:nth-child(odd) {
+            color: salmon;
+        }
+
+        .hooothooot>li:nth-child(5) {
+            color: rgb(55, 0, 255);
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="box">
+        <p class="box_text">박스입니다.</p>
+    </div>
+
+
+
+
+
+    <div class="box2">
+
+        <p>active 실습</p>
+
+    </div>
+
+
+
+
+    <ul class="hooothooot">
+        <li>핫도그</li>
+        <li>잠</li>
+        <li>라면</li>
+        <li>김밥</li>
+        <li>스타벅스</li>
+    </ul>
+
+
+
+
+
+</body>
+
+</html>

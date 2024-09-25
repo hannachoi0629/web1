@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css선택자</title>
+    <style>
+        * {
+            color: aqua;
+        }
+
+        #id_section {
+            background-color: aquamarine;
+        }
+
+        .class_section {
+            background-color: blue;
+        }
+
+        .wed_level>li {
+            color: blue;
+        }
+
+
+        .wed_level>li>a {
+            text-decoration: none;
+            color: aqua;
+        }
+
+        .wed_class_name {
+            text-decoration: none;
+            background-color: aqua;
+            color: aquamarine;
+        }
+
+
+        .front_and_lag~li {
+            background-color: crimson
+        }
+
+
+        .usann+li {
+            background-color: red;
+        }
+
+
+        .p_tag, h3, #span_id {
+            background-color: deeppink;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <h1>css선택자</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adip
+        isicing elit. Modi fuga nemo, quidem volup
+        tas sequi eum, ratione
+        accusamus consequatur labore maxime reprehe
+        derit ullam maiores iusto perspiciatis rem deb
+        itis quibusdam
+        molestias tempore?
+
+
+    </p>
+
+    <section id="id_section">
+        <h2>아이디 선택자</h2>
+    </section>
+
+
+    <section class="class_section"></section>
+
+
+    <ul class="wed_level">
+        <li>
+            <a href="#">
+                웹1
+            </a>
+        </li>
+        <li>웹2</li>
+        <li>웹3</li>
+    </ul>
+
+    <ul class="wed_class_name">
+        <li>
+            <a href="#">
+                웹1
+            </a>
+        </li>
+        <li>
+            <a href="#">웹2</a>
+        </li>
+        <li>
+            <a href="#">웹3</a>
+        </li>
+    </ul>
+
+
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li class="front_and_lag">java</li>
+        <li>flwj</li>
+        <li>dfsd</li>
+    </ul>
+
+
+
+    <ul>
+        <li class="usann">우산</li>
+        <li>앵한</li>
+        <li>카이말</li>
+        <li>미피</li>
+        <li>귀여워</li>
+    </ul>
+
+
+    <div>
+        <p class="p_tag">p태그 입니다</p>
+        <h3>h3 태그 입니다</h3>
+        <span id="span_id"> span 테그입니다</span>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
