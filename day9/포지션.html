@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션</title>
+    <style>
+
+        body {
+            height: 10000px;
+        }
+        .container {
+            width: 700px;
+            border: 1px solid #000;
+            height: 500px;
+            margin-top: 50px;
+            position: relative;
+
+
+        }
+
+        .box {
+            position: absolute;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .b1 {
+            background-color: steelblue;
+            top: 0;
+            left: 0;
+            z-index: --1;
+        }
+
+        .b2 {
+            background-color: rgb(5, 179, 135);
+            top: 50%;
+            right: 50%;
+            /* transform: translatex(-50%);
+        transform: translatey(-50%); */
+            transform: translate(50%, -50%);
+        }
+
+        .b3 {
+            background-color: rgb(97, 12, 167);
+            bottom: 0;
+            right: 0;
+        }
+
+        p {
+            z-index: 1;
+        }
+
+        .top_btn {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            background-color: rgb(97, 12, 167);
+            color: #fff;
+            line-height: 100px;
+            border-radius: 25px;
+            
+        }
+
+        a{
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas tempore ratione ullam explicabo repudiandae
+            laboriosam reiciendis illum fugiat incidunt tempora facere quidem, dolorum quis laborum corporis porro,
+            cumque magni tenetur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat mollitia quam
+            veritatis voluptates nulla harum aliquam consectetur illo. Nesciunt dignissimos qui illum porro. Dolor
+            magnam necessitatibus obcaecati reprehenderit illo. Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Libero vero quam esse cumque! Commodi rerum vel debitis, facere possimus nulla totam animi eligendi
+            iste optio, consequatur deleniti incidunt atque minus!</p>
+        <div class="box b1">왼쪽 위</div>
+        <div class="box b2">중간</div>
+        <div class="box b3">오른쪽 아래</div>
+
+    </div>
+
+    <div class="top_btn" >
+        <a href="container">
+            top
+        </a>
+        
+    </div>
+
+</body>
+
+</html>
