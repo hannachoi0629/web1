@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정답</title>
+    <script src="https://kit.fontawesome.com/c54ed1577d.js" crossorigin="anonymous"></script>
+<style>
+    .comment_container{
+        display: flex;
+        justify-content: space-between;
+        margin: 16px;
+        max-width: 1200px;
+
+    }
+
+    figure{
+        background: url(./댓글실습.png);
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        background-size: contain;
+        background-repeat:no-repeat
+    }
+
+    figure > a {
+        width: 40px;
+        height: 40px;
+        display: block;
+    }
+
+    .usercomment{
+        flex-basis: 93%;
+    }
+
+    .userneme,
+    .comment_content {
+        font-size: 14px;
+
+    }
+
+    .icon_box{
+        display: flex;
+        align-items: center;
+    }
+    .icon_box > div {
+        margin-right: 20px;
+    }
+    .recomemt{
+        color: blue;
+        width: 100px;
+        height: 70px;
+        text-align: left;
+        line-height: 70px;  
+        cursor: pointer;
+    }
+
+</style>
+
+
+
+</head>
+
+<body>
+
+    <div class="comment_container">
+        <figure>
+            <a href="#"></a>
+        </figure>
+        <div class="usercomment">
+            <h2 class="userneme">@username1</h2>
+            <p class="comment_content">
+                Lorem ipsum dolor sit amet consectetur adipi
+                sicing elit. Perferendis cupiditate libero ad na
+                tus ducimus esse aspernatur ex laudantium nostrum! Off
+                cia eaque totam <br>
+                velit itaque libero obcaecati aperiam nemo ex
+            </p>
+            <div class="icon_box">
+                <div class="like">
+                    <i class="fa-solid fa-thumbs-up "></i>
+                    <span >156</span>
+                </div> 
+
+                <div class="eww">
+                    <i class="fa-solid fa-thumbs-down"></i>
+                </div>
+            </div>
+
+               <div class="recomemt">
+                <i class="fa-solid fa-chevron-down"></i>
+                <span>1 reply</span>
+               </div>
+
+        
+        </div>
+        <div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+    </div>
+
+</body>
+
+</html>
